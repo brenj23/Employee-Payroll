@@ -4,7 +4,8 @@
 Employee payroll table
 
 ## Screenshot
-<img width="1079" alt="image" src="![Screenshot 2024-03-19 at 4 51 31 PM (2)](https://github.com/brenj23/Employee-Payroll/assets/154111598/e7a48e25-f964-44e6-8115-b57c8ad2595f)">
+<img width="1470" alt="Screenshot 2024-03-19 at 4 51 31 PM" src="https://github.com/brenj23/Employee-Payroll/assets/154111598/9d7f9333-adce-42a3-9453-4cc139554c9f">
+
 
 
 ## URL 
