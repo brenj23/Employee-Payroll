@@ -1,13 +1,16 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-const employeesArray = []
+const employeesArray = [];
 // Collect employee data
-const collectEmployees = function(employeeTable) {  
+const collectEmployees = function() {  
     let firstName = prompt("Enter Employees first name:");
       //document.getElementById("firstName").innerHTML = firstName;
     let lastName = prompt("Enter Employees last name:");
       //document.getElementById("lastName").innerHTML = lastName;
     let salary = prompt("Enter Employees Salary:");
+    if (isNaN(salary)){
+      salary = 0
+    }
       //document.getElementById("salary").innerHTML = salary;
     employeesArray.push({firstName:firstName, lastName:lastName, salary:salary})
       let addNewEmployee = confirm("Do you want to add another employee?");
@@ -20,6 +23,7 @@ const collectEmployees = function(employeeTable) {
     displayAverageSalary(employeesArray)
     getRandomEmployee(employeesArray)
   }
+  return employeesArray;
 }
 
 
@@ -107,4 +111,4 @@ const trackEmployeeData = function() {
 }
 
 // Add event listener to 'Add Employees' button
-addEmployeesBtn.addEventListener('click', collectEmployees);
+addEmployeesBtn.addEventListener('click', trackEmployeeData );
